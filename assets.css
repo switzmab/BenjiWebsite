@@ -1,0 +1,99 @@
+#stuff {
+    background:blue;
+    color:red;
+}
+.lifelife p {
+    background:chartreuse;
+    color:chocolate;
+}
+.lifelife p.heyhey {
+    background:darkcyan;
+}
+p {
+    color: blue;
+    font-size: 16px;
+    background: orange;
+}
+
+div {
+    color: green;
+}
+
+.awesome {
+    font-size: 18px;
+}
+
+#hey {
+    color: yellow;
+}
+
+
+.cool {
+    background:orange;
+}
+.kinda-cool{
+    background:purple;
+}
+.task {
+    background: rgba(138,22,123,0.54);
+}
+.count {
+    background: hsla(42, 50%, 28%,0.29);
+}
+.col {
+    width: 50%;
+}
+.banner {
+    font-size: 14px;
+    width: 5em;
+    /*5em means that it will be 70 pixels (14*5)*/
+}
+
+p{
+    /*display: block;
+    display: inline;
+    display: none;*/
+    display: inline-block;
+}
+div{
+    /*moz (mozilla), ms (internet explorer), webkit (chrome/safari)*/
+    border: 8px solid #399599;
+    height: 120px;
+    margin: 20px 10px;
+    margin-left: 8px;
+    padding: 20px;
+    padding-top: 10px;
+    width: 400px;  
+}
+
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
+}
+
+h1,h3,h4,h5,p {
+    margin-bottom: 22px;
+}
+
+.x {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+}
+.cool {
+    border: 1px solid #dfe2e5;
+    padding: 10px 30px;    
+}
+
+img {
+    float: left;
+}

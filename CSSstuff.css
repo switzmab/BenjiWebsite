@@ -1,0 +1,169 @@
+.title {
+    font-size: 180%;
+    padding: 20px;
+    width: 1500px;
+    text-align: center;
+    background: #1FB688
+}
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    width: 1500px;
+    padding: 15px;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav a.right {
+    float: right;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.nav h1 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.712);
+    text-align: center;
+}
+.nav p {
+    font-size: 20px;
+    color: rgb(200,200,200);
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+.projects {
+    background-color: rgba(255, 255, 255, 30);
+    font-size: 100%;
+    font-family: calibri;
+    float: left;
+    margin: 0 1.5%;
+    width: 90%;
+
+}
+.home {
+    background-color: rgba(255, 255, 255, 30);
+    font-size: 100%;
+    font-family: calibri;
+    float: left;
+    margin: 0 1.5%;
+    width: 70%;
+}
+
+.sub, .contacts {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+
+}
+
+.contacts {
+   position: bottom; 
+}
+
+h1 {
+    color: black;
+    position: left;
+    border: 2px solid black;
+    padding: 5px;
+}
+p{
+    font-size: 75%;
+    color: black;
+    position: left;
+}
+section {
+    font-size: 110%;
+    font-family: calibri;
+    color: black;
+}
+
+.links a {
+    display: block;
+    color: rgb(180, 23, 23);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+hr {
+    display: block;
+    height: 1.5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.bottom {
+    align: bottom;
+}
+/*Mess around stuff */
+
+.toggle-message-btn {
+    margin: 50px auto;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    pointer-events: none;
+    /* new */
+}
+.message {
+    width: 200px;
+    background-color: orangered;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    border: 4px solid #000;
+    opacity: 0;
+    /* new */
+    transition: opacity 0.3s;
+    /* new */
+}
+
+.checkbox:checked~.message {
+    opacity: 1;
+}
