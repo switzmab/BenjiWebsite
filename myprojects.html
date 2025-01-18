@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>About Me</title>
+    <title>Projects</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -17,11 +17,18 @@
   </head>
   <section class="title">
     <a href="BenjisWebsite.html"><b>Benji's Website</b></a>
+    <h1>Projects</h1>
   </section>
+  <div class="nav">
+        <h1>Table of Contents</h1>
+        <p>
+            Click these links to go to other parts of my website!
+        </p>
+        <a href="home_page.html">Home</a>
+        <a href="myprojects.html">My Projects</a>
+        <a href="about_me.html">About Me</a>
+    </div>
   <body class="projects">
-    <section class="title">
-      <h1>Projects</h1>
-    </section>
     <section class="tableContents">
       <h1>Table of Contents</h1>
       <p>Click these links to jump down to the portions of the page</p>
@@ -30,43 +37,68 @@
       <a href="myprojects.html#snakegame">Snake Game</a>
       <hr />
     </section>
-    <section id="blackjack">
-      <h3><u>Java Projects</u></h3>
-      <h4>Blackjack</h4>
-      <p>
-        I initially created blackjack for a project in a high school which
-        tasked us with creating an object-oriented program using many different
-        features we learned throughout the course. After finishing the course, I
-        have gone through an optimized many components of the program as well as
-        attempted to implement JFrame graphic components
-      </p>
-      <a
-        href="C:\Users\benji\OneDrive\Desktop\CodeShit\PersonalProjects\BenjaminGrade11CompSci\src\blackjack.java"
-        download
-        >Click here to test the program!</a
-      >
-      <h4>Kinematics Grapher</h4>
-      <p>
-        I used a methods assignment focused on doing basic 1 dimensional
-        kinematics calculations to build a GUI that would display the
-        calculations on a graph once calculated
-      </p>
-      <p>Click the following to download the files for this program!</p>
-      <form
-        action="C:\Users\benji\OneDrive\Desktop\CodeShit\PersonalProjects\BenjaminGrade11CompSci\src\MethodsAssignment.java">
-        <button buttontype="submit">Download</button>
-      </form>
-      <form
-        action="C:\Users\benji\OneDrive\Desktop\CodeShit\PersonalProjects\BenjaminGrade11CompSci\src\KinematicsGraphics.java">
-        <button buttontype="submit">Download</button>
-      </form>
-      <h3><u>C/C++ Projects</u></h3>
-      <h4>Snake Game</h4>
-      <p>
-        Throughout my programming course, I built an object-oriented program in C++ that allowed for a user to play the classic snake game in the terminal. 
-        <br>Also used dynamic memory allocation to keep memory leaks within the program to 0.
-      </p>
-    </section>
+    <div class="software">
+      <h2>Software Projects</h2>
+      <section id="java">
+        <h3><u>Java Projects</u></h3>
+        <div class="column">
+          <h4>Blackjack</h4>
+          <p>
+            I initially created blackjack for a project in a high school which
+            tasked us with creating an object-oriented program using many different
+            features we learned throughout the course. After finishing the course, I
+            have gone through an optimized many components of the program as well as
+            attempted to implement JFrame graphic components.
+          </p>
+          <a
+            href="C:\Users\benji\OneDrive\Desktop\CodeShit\PersonalProjects\BenjaminGrade11CompSci\src\blackjack.java"
+            download
+            >Click here to test the program!</a
+          >
+          <form
+              action="C:\Users\benji\OneDrive\Desktop\CodeShit\PersonalProjects\BenjaminGrade11CompSci\src\MethodsAssignment.java">
+              <button buttontype="submit">Download</button>
+            </form>
+        </div>
+        <div class = "column">
+            <h4>Kinematics Grapher</h4>
+            <p>
+              I used a methods assignment focused on doing basic 1 dimensional
+              kinematics calculations to build a GUI that would display the
+              calculations on a graph once calculated
+            </p>
+            <p>Click the following to download the files for this program!</p>
+            
+            <form
+              action="C:\Users\benji\OneDrive\Desktop\CodeShit\PersonalProjects\BenjaminGrade11CompSci\src\KinematicsGraphics.java">
+              <button buttontype="submit">Download</button>
+            </form>
+            <br>
+        </div>
+        
+      </section>
+      <section id = "C">
+          <h3><u>C/C++ Projects</u></h3>
+          <div class="column">
+            <h4>Snake Game</h4>
+            <p>
+              Throughout my programming course, I built an object-oriented program in C++ that allowed for a user to play the classic snake game in the terminal. 
+              <br>Also used dynamic memory allocation to keep memory leaks within the program to 0.
+            </p>
+          </div>  
+          <div class="column">
+            <h4>TBD</h4>
+          </div>
+        
+      </section>
+
+    </div>
+    <div class="hardware">
+      
+    </div>
+    <div class="engineering">
+
+    </div>
     <section class="sub">
       <small>
         <nav class="links">

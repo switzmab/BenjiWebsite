@@ -60,6 +60,11 @@
     padding: 20px;
 }
 
+.column {
+    float:left;
+    width:50%;
+}
+
 @media screen and (max-width: 700px) {
     .row {
         flex-direction: column;
@@ -70,6 +75,13 @@
         float: none;
         width: 100%;
     }
+}
+.about_me {
+    background-color: rgb(100,100,180);
+    padding: 40px;
+}
+.about_me p {
+    color: light-grey;
 }
 .projects {
     background-color: rgba(255, 255, 255, 30);
@@ -107,9 +119,11 @@ h1 {
     padding: 5px;
 }
 p{
-    font-size: 75%;
     color: black;
     position: left;
+}
+a{
+    text-decoration: none;
 }
 section {
     font-size: 110%;
@@ -140,6 +154,10 @@ hr {
 }
 .bottom {
     align: bottom;
+}
+
+.software h3 {
+    text-align: left;
 }
 /*Mess around stuff */
 
