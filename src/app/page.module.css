@@ -1,0 +1,203 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background: #1FB688;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.mainContent {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.aboutSection {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.projectsSection {
+  background-color: #f1f1f1;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sectionSubtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navText {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.inlineLink {
+  color: #1FB688;
+  text-decoration: underline;
+}
+
+.inlineLink:hover {
+  color: #158f69;
+}
+
+.categoryTitle {
+  font-size: 1.2rem;
+  margin: 15px 0 10px 0;
+  color: #444;
+}
+
+.projectList {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.projectList li {
+  padding: 5px 0;
+  font-style: italic;
+  color: #666;
+}
+
+.projectLink {
+  color: #1FB688;
+  text-decoration: underline;
+}
+
+.projectLink:hover {
+  color: #158f69;
+}
+
+.aboutTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  background-color: rgb(100, 100, 180);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.aboutText {
+  flex: 1;
+}
+
+.aboutText p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.profileImage {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactSection {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contactLink {
+  color: #1FB688;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: 2px solid #1FB688;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  background-color: #1FB688;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .mainContent {
+    flex-direction: column;
+  }
+  
+  .sidebar,
+  .aboutSection {
+    flex: none;
+  }
+  
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .imageContainer {
+    justify-content: center;
+  }
+  
+  .contactLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contactLink {
+    width: 200px;
+  }
+}

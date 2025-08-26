@@ -1,0 +1,240 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background: #1FB688;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.homeLink {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.homeLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.aboutSection {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.textSection {
+  flex: 2;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #1FB688;
+  padding-bottom: 10px;
+}
+
+.bioText {
+  line-height: 1.7;
+  color: #555;
+}
+
+.bioText p {
+  margin-bottom: 20px;
+}
+
+.interestsList {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.interestsList li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.interestsList strong {
+  color: #1FB688;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.profileImage {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.05);
+}
+
+.imageCaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.skillsSection {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px;
+  margin-top: 30px;
+}
+
+.skillsTitle {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skillCategory {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skillCategory h4 {
+  color: #1FB688;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #1FB688;
+  padding-bottom: 8px;
+}
+
+.skillCategory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skillCategory li {
+  padding: 8px 0;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.skillCategory li:last-child {
+  border-bottom: none;
+}
+
+.contactSection {
+  background: #1FB688;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contactDescription {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contactLink {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.contactLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .imageSection {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contactLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contactLink {
+    width: 200px;
+  }
+}
